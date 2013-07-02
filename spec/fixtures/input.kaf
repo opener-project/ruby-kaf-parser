@@ -1,0 +1,1808 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<KAF xml:lang="en" version="v1.opener">
+  <kafHeader>
+    <linguisticProcessors layer="text">
+      <lp name="opennlp-en-tok" timestamp="2013-06-27T12:14:45Z" version="1.0"/>
+      <lp name="opennlp-en-sent" timestamp="2013-06-27T12:14:45Z" version="1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="terms">
+      <lp name="ehu-pos-en" timestamp="2013-06-27 14:14:47" version="1.0"/>
+      <lp timestamp="2013-06-27T14:14:48CEST" version="1.0" name="Basic_polarity_tagger_with_pos"/>
+    </linguisticProcessors>
+    <linguisticProcessor layer="opinions">
+      <lp timestamp="2013-06-27T14:14:49CEST" version="1.0" name="Crfsuite machine learning opinion miner"/>
+    </linguisticProcessor>
+  </kafHeader>
+  <text>
+    <wf wid="w1" sent="1" para="1" offset="0" length="3">You</wf>
+    <wf wid="w2" sent="1" para="1" offset="4" length="3">are</wf>
+    <wf wid="w3" sent="1" para="1" offset="8" length="5">right</wf>
+    <wf wid="w4" sent="1" para="1" offset="14" length="5">about</wf>
+    <wf wid="w5" sent="1" para="1" offset="20" length="4">over</wf>
+    <wf wid="w6" sent="1" para="1" offset="25" length="3">the</wf>
+    <wf wid="w7" sent="1" para="1" offset="29" length="7">counter</wf>
+    <wf wid="w8" sent="1" para="1" offset="37" length="8">medicine</wf>
+    <wf wid="w9" sent="1" para="1" offset="45" length="1">:</wf>
+    <wf wid="w10" sent="1" para="1" offset="47" length="3">for</wf>
+    <wf wid="w11" sent="1" para="1" offset="51" length="4">most</wf>
+    <wf wid="w12" sent="1" para="1" offset="56" length="2">if</wf>
+    <wf wid="w13" sent="1" para="1" offset="59" length="3">the</wf>
+    <wf wid="w14" sent="1" para="1" offset="63" length="7">heavier</wf>
+    <wf wid="w15" sent="1" para="1" offset="71" length="5">stuff</wf>
+    <wf wid="w16" sent="2" para="1" offset="77" length="3">you</wf>
+    <wf wid="w17" sent="2" para="1" offset="80" length="3">'ll</wf>
+    <wf wid="w18" sent="2" para="1" offset="84" length="4">need</wf>
+    <wf wid="w19" sent="2" para="1" offset="89" length="1">a</wf>
+    <wf wid="w20" sent="2" para="1" offset="91" length="12">prescription</wf>
+    <wf wid="w21" sent="2" para="1" offset="103" length="1">.</wf>
+    <wf wid="w22" sent="3" para="1" offset="105" length="3">You</wf>
+    <wf wid="w23" sent="3" para="1" offset="109" length="3">may</wf>
+    <wf wid="w24" sent="3" para="1" offset="113" length="2">go</wf>
+    <wf wid="w25" sent="3" para="1" offset="116" length="2">to</wf>
+    <wf wid="w26" sent="3" para="1" offset="119" length="2">an</wf>
+    <wf wid="w27" sent="3" para="1" offset="122" length="9">"apotheek</wf>
+    <wf wid="w28" sent="3" para="1" offset="131" length="1">"</wf>
+    <wf wid="w29" sent="3" para="1" offset="133" length="7">without</wf>
+    <wf wid="w30" sent="3" para="1" offset="141" length="1">a</wf>
+    <wf wid="w31" sent="3" para="1" offset="143" length="12">prescription</wf>
+    <wf wid="w32" sent="4" para="1" offset="156" length="2">to</wf>
+    <wf wid="w33" sent="4" para="1" offset="159" length="3">see</wf>
+    <wf wid="w34" sent="4" para="1" offset="163" length="2">if</wf>
+    <wf wid="w35" sent="4" para="1" offset="166" length="4">they</wf>
+    <wf wid="w36" sent="4" para="1" offset="171" length="3">can</wf>
+    <wf wid="w37" sent="4" para="1" offset="175" length="4">help</wf>
+    <wf wid="w38" sent="4" para="1" offset="180" length="3">you</wf>
+    <wf wid="w39" sent="4" para="1" offset="184" length="6">though</wf>
+    <wf wid="w40" sent="4" para="1" offset="190" length="1">.</wf>
+    <wf wid="w41" sent="5" para="1" offset="192" length="9">Employees</wf>
+    <wf wid="w42" sent="5" para="1" offset="202" length="2">at</wf>
+    <wf wid="w43" sent="5" para="1" offset="205" length="2">an</wf>
+    <wf wid="w44" sent="5" para="1" offset="208" length="9">"apotheek</wf>
+    <wf wid="w45" sent="5" para="1" offset="217" length="1">"</wf>
+    <wf wid="w46" sent="5" para="1" offset="219" length="4">have</wf>
+    <wf wid="w47" sent="5" para="1" offset="224" length="5">basic</wf>
+    <wf wid="w48" sent="6" para="1" offset="230" length="7">medical</wf>
+    <wf wid="w49" sent="6" para="1" offset="238" length="8">training</wf>
+    <wf wid="w50" sent="6" para="1" offset="246" length="1">.</wf>
+    <wf wid="w51" sent="7" para="2" offset="249" length="9">Otherwise</wf>
+    <wf wid="w52" sent="7" para="2" offset="259" length="1">(</wf>
+    <wf wid="w53" sent="7" para="2" offset="260" length="3">and</wf>
+    <wf wid="w54" sent="7" para="2" offset="264" length="1">I</wf>
+    <wf wid="w55" sent="7" para="2" offset="266" length="6">advise</wf>
+    <wf wid="w56" sent="7" para="2" offset="273" length="3">you</wf>
+    <wf wid="w57" sent="7" para="2" offset="277" length="2">to</wf>
+    <wf wid="w58" sent="7" para="2" offset="280" length="2">do</wf>
+    <wf wid="w59" sent="7" para="2" offset="283" length="4">this</wf>
+    <wf wid="w60" sent="7" para="2" offset="287" length="1">)</wf>
+    <wf wid="w61" sent="7" para="2" offset="289" length="3">you</wf>
+    <wf wid="w62" sent="7" para="2" offset="293" length="3">can</wf>
+    <wf wid="w63" sent="7" para="2" offset="297" length="2">go</wf>
+    <wf wid="w64" sent="7" para="2" offset="300" length="2">to</wf>
+    <wf wid="w65" sent="7" para="2" offset="303" length="1">a</wf>
+    <wf wid="w66" sent="7" para="2" offset="305" length="9">"huisarts</wf>
+    <wf wid="w67" sent="7" para="2" offset="314" length="1">"</wf>
+    <wf wid="w68" sent="7" para="2" offset="315" length="1">.</wf>
+    <wf wid="w69" sent="8" para="2" offset="317" length="4">This</wf>
+    <wf wid="w70" sent="8" para="2" offset="322" length="2">is</wf>
+    <wf wid="w71" sent="8" para="2" offset="325" length="1">a</wf>
+    <wf wid="w72" sent="9" para="2" offset="327" length="7">broadly</wf>
+    <wf wid="w73" sent="9" para="2" offset="335" length="7">trained</wf>
+    <wf wid="w74" sent="9" para="2" offset="343" length="6">doctor</wf>
+    <wf wid="w75" sent="9" para="2" offset="350" length="4">that</wf>
+    <wf wid="w76" sent="9" para="2" offset="355" length="4">acts</wf>
+    <wf wid="w77" sent="9" para="2" offset="360" length="2">as</wf>
+    <wf wid="w78" sent="9" para="2" offset="363" length="3">the</wf>
+    <wf wid="w79" sent="9" para="2" offset="367" length="5">first</wf>
+    <wf wid="w80" sent="9" para="2" offset="373" length="5">point</wf>
+    <wf wid="w81" sent="9" para="2" offset="379" length="2">of</wf>
+    <wf wid="w82" sent="9" para="2" offset="382" length="7">contact</wf>
+    <wf wid="w83" sent="9" para="2" offset="390" length="3">for</wf>
+    <wf wid="w84" sent="9" para="2" offset="394" length="7">medical</wf>
+    <wf wid="w85" sent="10" para="2" offset="402" length="5">stuff</wf>
+    <wf wid="w86" sent="10" para="2" offset="408" length="2">in</wf>
+    <wf wid="w87" sent="10" para="2" offset="411" length="3">The</wf>
+    <wf wid="w88" sent="10" para="2" offset="415" length="11">Netherlands</wf>
+    <wf wid="w89" sent="10" para="2" offset="426" length="1">.</wf>
+    <wf wid="w90" sent="11" para="2" offset="428" length="1">A</wf>
+    <wf wid="w91" sent="11" para="2" offset="430" length="9">"huisarts</wf>
+    <wf wid="w92" sent="11" para="2" offset="439" length="1">"</wf>
+    <wf wid="w93" sent="11" para="2" offset="441" length="4">will</wf>
+    <wf wid="w94" sent="11" para="2" offset="446" length="8">diagnose</wf>
+    <wf wid="w95" sent="11" para="2" offset="455" length="1">a</wf>
+    <wf wid="w96" sent="11" para="2" offset="457" length="7">problem</wf>
+    <wf wid="w97" sent="11" para="2" offset="465" length="3">and</wf>
+    <wf wid="w98" sent="11" para="2" offset="469" length="6">either</wf>
+    <wf wid="w99" sent="12" para="2" offset="476" length="9">prescribe</wf>
+    <wf wid="w100" sent="12" para="2" offset="486" length="3">you</wf>
+    <wf wid="w101" sent="12" para="2" offset="490" length="8">medicine</wf>
+    <wf wid="w102" sent="12" para="2" offset="499" length="2">or</wf>
+    <wf wid="w103" sent="12" para="2" offset="502" length="4">give</wf>
+    <wf wid="w104" sent="12" para="2" offset="507" length="3">you</wf>
+    <wf wid="w105" sent="12" para="2" offset="511" length="1">a</wf>
+    <wf wid="w106" sent="12" para="2" offset="513" length="7">written</wf>
+    <wf wid="w107" sent="12" para="2" offset="521" length="9">reference</wf>
+    <wf wid="w108" sent="12" para="2" offset="531" length="2">to</wf>
+    <wf wid="w109" sent="12" para="2" offset="534" length="1">a</wf>
+    <wf wid="w110" sent="12" para="2" offset="536" length="8">hospital</wf>
+    <wf wid="w111" sent="12" para="2" offset="545" length="2">or</wf>
+    <wf wid="w112" sent="12" para="2" offset="548" length="5">other</wf>
+    <wf wid="w113" sent="13" para="2" offset="554" length="7">medical</wf>
+    <wf wid="w114" sent="13" para="2" offset="562" length="10">specialist</wf>
+    <wf wid="w115" sent="13" para="2" offset="572" length="1">.</wf>
+    <wf wid="w116" sent="14" para="3" offset="575" length="3">You</wf>
+    <wf wid="w117" sent="14" para="3" offset="579" length="4">will</wf>
+    <wf wid="w118" sent="14" para="3" offset="584" length="4">most</wf>
+    <wf wid="w119" sent="14" para="3" offset="589" length="6">likely</wf>
+    <wf wid="w120" sent="14" para="3" offset="596" length="2">be</wf>
+    <wf wid="w121" sent="14" para="3" offset="599" length="4">able</wf>
+    <wf wid="w122" sent="14" para="3" offset="604" length="2">to</wf>
+    <wf wid="w123" sent="14" para="3" offset="607" length="4">find</wf>
+    <wf wid="w124" sent="14" para="3" offset="612" length="1">a</wf>
+    <wf wid="w125" sent="14" para="3" offset="614" length="9">"huisarts</wf>
+    <wf wid="w126" sent="14" para="3" offset="623" length="1">"</wf>
+    <wf wid="w127" sent="14" para="3" offset="625" length="2">on</wf>
+    <wf wid="w128" sent="14" para="3" offset="628" length="6">Google</wf>
+    <wf wid="w129" sent="14" para="3" offset="635" length="4">Maps</wf>
+    <wf wid="w130" sent="14" para="3" offset="639" length="1">,</wf>
+    <wf wid="w131" sent="14" para="3" offset="641" length="2">or</wf>
+    <wf wid="w132" sent="14" para="3" offset="644" length="3">ask</wf>
+    <wf wid="w133" sent="14" para="3" offset="648" length="4">your</wf>
+    <wf wid="w134" sent="15" para="3" offset="653" length="5">hotel</wf>
+    <wf wid="w135" sent="15" para="3" offset="659" length="5">staff</wf>
+    <wf wid="w136" sent="15" para="3" offset="665" length="2">or</wf>
+    <wf wid="w137" sent="15" para="3" offset="668" length="3">B&amp;B</wf>
+    <wf wid="w138" sent="15" para="3" offset="672" length="4">host</wf>
+    <wf wid="w139" sent="15" para="3" offset="676" length="1">.</wf>
+    <wf wid="w140" sent="16" para="3" offset="678" length="5">Every</wf>
+    <wf wid="w141" sent="16" para="3" offset="684" length="5">Dutch</wf>
+    <wf wid="w142" sent="16" para="3" offset="690" length="6">person</wf>
+    <wf wid="w143" sent="16" para="3" offset="697" length="4">will</wf>
+    <wf wid="w144" sent="16" para="3" offset="702" length="4">know</wf>
+    <wf wid="w145" sent="16" para="3" offset="707" length="4">what</wf>
+    <wf wid="w146" sent="16" para="3" offset="712" length="3">you</wf>
+    <wf wid="w147" sent="16" para="3" offset="716" length="4">mean</wf>
+    <wf wid="w148" sent="16" para="3" offset="721" length="3">and</wf>
+    <wf wid="w149" sent="16" para="3" offset="725" length="6">should</wf>
+    <wf wid="w150" sent="17" para="3" offset="732" length="2">be</wf>
+    <wf wid="w151" sent="17" para="3" offset="735" length="4">able</wf>
+    <wf wid="w152" sent="17" para="3" offset="740" length="2">to</wf>
+    <wf wid="w153" sent="17" para="3" offset="743" length="5">point</wf>
+    <wf wid="w154" sent="17" para="3" offset="749" length="3">you</wf>
+    <wf wid="w155" sent="17" para="3" offset="753" length="2">to</wf>
+    <wf wid="w156" sent="17" para="3" offset="756" length="3">one</wf>
+    <wf wid="w157" sent="17" para="3" offset="759" length="1">.</wf>
+    <wf wid="w158" sent="18" para="4" offset="762" length="2">It</wf>
+    <wf wid="w159" sent="18" para="4" offset="764" length="2">'s</wf>
+    <wf wid="w160" sent="18" para="4" offset="767" length="5">worth</wf>
+    <wf wid="w161" sent="18" para="4" offset="773" length="2">it</wf>
+    <wf wid="w162" sent="18" para="4" offset="776" length="2">to</wf>
+    <wf wid="w163" sent="18" para="4" offset="779" length="4">call</wf>
+    <wf wid="w164" sent="18" para="4" offset="784" length="3">the</wf>
+    <wf wid="w165" sent="18" para="4" offset="788" length="9">"huisarts</wf>
+    <wf wid="w166" sent="18" para="4" offset="797" length="1">"</wf>
+    <wf wid="w167" sent="18" para="4" offset="799" length="2">in</wf>
+    <wf wid="w168" sent="18" para="4" offset="802" length="7">advance</wf>
+    <wf wid="w169" sent="18" para="4" offset="810" length="2">to</wf>
+    <wf wid="w170" sent="18" para="4" offset="813" length="5">check</wf>
+    <wf wid="w171" sent="18" para="4" offset="819" length="2">if</wf>
+    <wf wid="w172" sent="18" para="4" offset="822" length="4">they</wf>
+    <wf wid="w173" sent="18" para="4" offset="827" length="4">have</wf>
+    <wf wid="w174" sent="18" para="4" offset="832" length="2">an</wf>
+    <wf wid="w175" sent="18" para="4" offset="835" length="4">open</wf>
+    <wf wid="w176" sent="19" para="4" offset="840" length="4">spot</wf>
+    <wf wid="w177" sent="19" para="4" offset="845" length="2">in</wf>
+    <wf wid="w178" sent="19" para="4" offset="848" length="3">the</wf>
+    <wf wid="w179" sent="19" para="4" offset="852" length="6">agenda</wf>
+    <wf wid="w180" sent="19" para="4" offset="859" length="3">and</wf>
+    <wf wid="w181" sent="19" para="4" offset="863" length="2">to</wf>
+    <wf wid="w182" sent="19" para="4" offset="866" length="4">make</wf>
+    <wf wid="w183" sent="19" para="4" offset="871" length="2">an</wf>
+    <wf wid="w184" sent="19" para="4" offset="874" length="11">appointment</wf>
+    <wf wid="w185" sent="19" para="4" offset="885" length="1">.</wf>
+    <wf wid="w186" sent="20" para="4" offset="887" length="9">Otherwise</wf>
+    <wf wid="w187" sent="20" para="4" offset="897" length="3">you</wf>
+    <wf wid="w188" sent="20" para="4" offset="901" length="4">risk</wf>
+    <wf wid="w189" sent="20" para="4" offset="906" length="7">sitting</wf>
+    <wf wid="w190" sent="20" para="4" offset="914" length="2">in</wf>
+    <wf wid="w191" sent="20" para="4" offset="917" length="1">a</wf>
+    <wf wid="w192" sent="21" para="4" offset="919" length="7">waiting</wf>
+    <wf wid="w193" sent="21" para="4" offset="927" length="4">room</wf>
+    <wf wid="w194" sent="21" para="4" offset="932" length="3">for</wf>
+    <wf wid="w195" sent="21" para="4" offset="936" length="5">quite</wf>
+    <wf wid="w196" sent="21" para="4" offset="942" length="4">some</wf>
+    <wf wid="w197" sent="21" para="4" offset="947" length="4">time</wf>
+    <wf wid="w198" sent="21" para="4" offset="951" length="1">.</wf>
+    <wf wid="w199" sent="22" para="5" offset="954" length="4">Feel</wf>
+    <wf wid="w200" sent="22" para="5" offset="959" length="4">free</wf>
+    <wf wid="w201" sent="22" para="5" offset="964" length="2">to</wf>
+    <wf wid="w202" sent="22" para="5" offset="967" length="2">PM</wf>
+    <wf wid="w203" sent="22" para="5" offset="970" length="2">me</wf>
+    <wf wid="w204" sent="22" para="5" offset="973" length="2">if</wf>
+    <wf wid="w205" sent="22" para="5" offset="976" length="3">you</wf>
+    <wf wid="w206" sent="22" para="5" offset="980" length="4">need</wf>
+    <wf wid="w207" sent="22" para="5" offset="985" length="4">more</wf>
+    <wf wid="w208" sent="22" para="5" offset="990" length="4">help</wf>
+    <wf wid="w209" sent="22" para="5" offset="994" length="1">.</wf>
+    <wf wid="w210" sent="23" para="5" offset="996" length="1">I</wf>
+    <wf wid="w211" sent="23" para="5" offset="997" length="3">'ll</wf>
+    <wf wid="w212" sent="23" para="5" offset="1001" length="2">be</wf>
+    <wf wid="w213" sent="23" para="5" offset="1004" length="2">in</wf>
+    <wf wid="w214" sent="23" para="5" offset="1007" length="9">Amsterdam</wf>
+    <wf wid="w215" sent="23" para="5" offset="1017" length="5">later</wf>
+    <wf wid="w216" sent="23" para="5" offset="1023" length="4">this</wf>
+    <wf wid="w217" sent="24" para="5" offset="1028" length="7">morning</wf>
+    <wf wid="w218" sent="24" para="5" offset="1036" length="3">and</wf>
+    <wf wid="w219" sent="24" para="5" offset="1040" length="7">perhaps</wf>
+    <wf wid="w220" sent="24" para="5" offset="1048" length="2">my</wf>
+    <wf wid="w221" sent="24" para="5" offset="1051" length="10">colleagues</wf>
+    <wf wid="w222" sent="24" para="5" offset="1062" length="5">might</wf>
+    <wf wid="w223" sent="24" para="5" offset="1068" length="2">be</wf>
+    <wf wid="w224" sent="24" para="5" offset="1071" length="4">able</wf>
+    <wf wid="w225" sent="24" para="5" offset="1076" length="2">to</wf>
+    <wf wid="w226" sent="24" para="5" offset="1079" length="4">help</wf>
+    <wf wid="w227" sent="24" para="5" offset="1084" length="3">out</wf>
+    <wf wid="w228" sent="24" para="5" offset="1088" length="2">as</wf>
+    <wf wid="w229" sent="24" para="5" offset="1091" length="4">well</wf>
+    <wf wid="w230" sent="24" para="5" offset="1095" length="1">.</wf>
+    <wf wid="w231" sent="25" para="5" offset="1097" length="4">Good</wf>
+    <wf wid="w232" sent="25" para="5" offset="1102" length="4">luck</wf>
+    <wf wid="w233" sent="25" para="5" offset="1106" length="1">!</wf>
+  </text>
+  <terms>
+    <!--You-->
+    <term tid="t1" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w1"/>
+      </span>
+    </term>
+    <!--are-->
+    <term tid="t2" type="open" lemma="be" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w2"/>
+      </span>
+    </term>
+    <!--right-->
+    <term tid="t3" type="open" lemma="right" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w3"/>
+      </span>
+    </term>
+    <!--about-->
+    <term tid="t4" type="close" lemma="about" pos="P" morphofeat="IN">
+      <span>
+        <target id="w4"/>
+      </span>
+    </term>
+    <!--over-->
+    <term tid="t5" type="close" lemma="over" pos="P" morphofeat="IN">
+      <span>
+        <target id="w5"/>
+      </span>
+    </term>
+    <!--the-->
+    <term tid="t6" type="close" lemma="the" pos="D" morphofeat="DT">
+      <span>
+        <target id="w6"/>
+      </span>
+    </term>
+    <!--counter-->
+    <term tid="t7" type="open" lemma="counter" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w7"/>
+      </span>
+    </term>
+    <!--medicine-->
+    <term tid="t8" type="open" lemma="medicine" pos="N" morphofeat="NN">
+      <span>
+        <target id="w8"/>
+      </span>
+    </term>
+    <!--:-->
+    <term tid="t9" type="close" lemma=":" pos="O" morphofeat=":">
+      <span>
+        <target id="w9"/>
+      </span>
+    </term>
+    <!--for-->
+    <term tid="t10" type="close" lemma="for" pos="P" morphofeat="IN">
+      <span>
+        <target id="w10"/>
+      </span>
+    </term>
+    <!--most-->
+    <term tid="t11" type="open" lemma="most" pos="G" morphofeat="JJS">
+      <span>
+        <target id="w11"/>
+      </span>
+      <sentiment resource="VUA_olery_lexicon_en_lmf" sentiment_modifier="intensifier"/>
+    </term>
+    <!--if-->
+    <term tid="t12" type="close" lemma="if" pos="P" morphofeat="IN">
+      <span>
+        <target id="w12"/>
+      </span>
+    </term>
+    <!--the-->
+    <term tid="t13" type="close" lemma="the" pos="D" morphofeat="DT">
+      <span>
+        <target id="w13"/>
+      </span>
+    </term>
+    <!--heavier-->
+    <term tid="t14" type="open" lemma="heavier" pos="A" morphofeat="RBR">
+      <span>
+        <target id="w14"/>
+      </span>
+    </term>
+    <!--stuff-->
+    <term tid="t15" type="open" lemma="stuff" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w15"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t16" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w16"/>
+      </span>
+    </term>
+    <!--'ll-->
+    <term tid="t17" type="close" lemma="'ll" pos="O" morphofeat="MD">
+      <span>
+        <target id="w17"/>
+      </span>
+    </term>
+    <!--need-->
+    <term tid="t18" type="open" lemma="need" pos="V" morphofeat="VB">
+      <span>
+        <target id="w18"/>
+      </span>
+      <sentiment polarity="negative" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--a-->
+    <term tid="t19" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w19"/>
+      </span>
+    </term>
+    <!--prescription-->
+    <term tid="t20" type="open" lemma="prescription" pos="N" morphofeat="NN">
+      <span>
+        <target id="w20"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t21" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w21"/>
+      </span>
+    </term>
+    <!--You-->
+    <term tid="t22" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w22"/>
+      </span>
+    </term>
+    <!--may-->
+    <term tid="t23" type="close" lemma="may" pos="O" morphofeat="MD">
+      <span>
+        <target id="w23"/>
+      </span>
+    </term>
+    <!--go-->
+    <term tid="t24" type="open" lemma="go" pos="V" morphofeat="VB">
+      <span>
+        <target id="w24"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t25" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w25"/>
+      </span>
+    </term>
+    <!--an-->
+    <term tid="t26" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w26"/>
+      </span>
+    </term>
+    <!--"apotheek-->
+    <term tid="t27" type="open" lemma="&quot;apotheek" pos="N" morphofeat="NN">
+      <span>
+        <target id="w27"/>
+      </span>
+    </term>
+    <!--"-->
+    <term tid="t28" type="open" lemma="&quot;" pos="N" morphofeat="NN">
+      <span>
+        <target id="w28"/>
+      </span>
+    </term>
+    <!--without-->
+    <term tid="t29" type="close" lemma="without" pos="P" morphofeat="IN">
+      <span>
+        <target id="w29"/>
+      </span>
+      <sentiment resource="VUA_olery_lexicon_en_lmf" sentiment_modifier="shifter"/>
+    </term>
+    <!--a-->
+    <term tid="t30" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w30"/>
+      </span>
+    </term>
+    <!--prescription-->
+    <term tid="t31" type="open" lemma="prescription" pos="N" morphofeat="NN">
+      <span>
+        <target id="w31"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t32" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w32"/>
+      </span>
+    </term>
+    <!--see-->
+    <term tid="t33" type="open" lemma="see" pos="V" morphofeat="VB">
+      <span>
+        <target id="w33"/>
+      </span>
+    </term>
+    <!--if-->
+    <term tid="t34" type="close" lemma="if" pos="P" morphofeat="IN">
+      <span>
+        <target id="w34"/>
+      </span>
+    </term>
+    <!--they-->
+    <term tid="t35" type="close" lemma="they" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w35"/>
+      </span>
+    </term>
+    <!--can-->
+    <term tid="t36" type="close" lemma="can" pos="O" morphofeat="MD">
+      <span>
+        <target id="w36"/>
+      </span>
+    </term>
+    <!--help-->
+    <term tid="t37" type="open" lemma="help" pos="V" morphofeat="VB">
+      <span>
+        <target id="w37"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--you-->
+    <term tid="t38" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w38"/>
+      </span>
+    </term>
+    <!--though-->
+    <term tid="t39" type="open" lemma="though" pos="A" morphofeat="RB">
+      <span>
+        <target id="w39"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t40" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w40"/>
+      </span>
+    </term>
+    <!--Employees-->
+    <term tid="t41" type="open" lemma="employee" pos="N" morphofeat="NNS">
+      <span>
+        <target id="w41"/>
+      </span>
+    </term>
+    <!--at-->
+    <term tid="t42" type="close" lemma="at" pos="P" morphofeat="IN">
+      <span>
+        <target id="w42"/>
+      </span>
+    </term>
+    <!--an-->
+    <term tid="t43" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w43"/>
+      </span>
+    </term>
+    <!--"apotheek-->
+    <term tid="t44" type="open" lemma="&quot;apotheek" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w44"/>
+      </span>
+    </term>
+    <!--"-->
+    <term tid="t45" type="open" lemma="&quot;" pos="N" morphofeat="NN">
+      <span>
+        <target id="w45"/>
+      </span>
+    </term>
+    <!--have-->
+    <term tid="t46" type="open" lemma="have" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w46"/>
+      </span>
+    </term>
+    <!--basic-->
+    <term tid="t47" type="open" lemma="basic" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w47"/>
+      </span>
+    </term>
+    <!--medical-->
+    <term tid="t48" type="open" lemma="medical" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w48"/>
+      </span>
+    </term>
+    <!--training-->
+    <term tid="t49" type="open" lemma="training" pos="N" morphofeat="NN">
+      <span>
+        <target id="w49"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t50" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w50"/>
+      </span>
+    </term>
+    <!--Otherwise-->
+    <term tid="t51" type="open" lemma="otherwise" pos="A" morphofeat="RB">
+      <span>
+        <target id="w51"/>
+      </span>
+    </term>
+    <!--(-->
+    <term tid="t52" type="close" lemma="(" pos="O" morphofeat="(">
+      <span>
+        <target id="w52"/>
+      </span>
+    </term>
+    <!--and-->
+    <term tid="t53" type="close" lemma="and" pos="C" morphofeat="CC">
+      <span>
+        <target id="w53"/>
+      </span>
+    </term>
+    <!--I-->
+    <term tid="t54" type="close" lemma="i" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w54"/>
+      </span>
+    </term>
+    <!--advise-->
+    <term tid="t55" type="open" lemma="advise" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w55"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t56" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w56"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t57" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w57"/>
+      </span>
+    </term>
+    <!--do-->
+    <term tid="t58" type="open" lemma="do" pos="V" morphofeat="VB">
+      <span>
+        <target id="w58"/>
+      </span>
+    </term>
+    <!--this-->
+    <term tid="t59" type="close" lemma="this" pos="D" morphofeat="DT">
+      <span>
+        <target id="w59"/>
+      </span>
+    </term>
+    <!--)-->
+    <term tid="t60" type="close" lemma=")" pos="O" morphofeat=")">
+      <span>
+        <target id="w60"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t61" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w61"/>
+      </span>
+    </term>
+    <!--can-->
+    <term tid="t62" type="close" lemma="can" pos="O" morphofeat="MD">
+      <span>
+        <target id="w62"/>
+      </span>
+    </term>
+    <!--go-->
+    <term tid="t63" type="open" lemma="go" pos="V" morphofeat="VB">
+      <span>
+        <target id="w63"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t64" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w64"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t65" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w65"/>
+      </span>
+    </term>
+    <!--"huisarts-->
+    <term tid="t66" type="open" lemma="&quot;huisarts" pos="N" morphofeat="NNS">
+      <span>
+        <target id="w66"/>
+      </span>
+    </term>
+    <!--"-->
+    <term tid="t67" type="open" lemma="&quot;" pos="N" morphofeat="NN">
+      <span>
+        <target id="w67"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t68" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w68"/>
+      </span>
+    </term>
+    <!--This-->
+    <term tid="t69" type="close" lemma="this" pos="D" morphofeat="DT">
+      <span>
+        <target id="w69"/>
+      </span>
+    </term>
+    <!--is-->
+    <term tid="t70" type="open" lemma="be" pos="V" morphofeat="VBZ">
+      <span>
+        <target id="w70"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t71" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w71"/>
+      </span>
+    </term>
+    <!--broadly-->
+    <term tid="t72" type="open" lemma="broadly" pos="A" morphofeat="RB">
+      <span>
+        <target id="w72"/>
+      </span>
+    </term>
+    <!--trained-->
+    <term tid="t73" type="open" lemma="trained" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w73"/>
+      </span>
+    </term>
+    <!--doctor-->
+    <term tid="t74" type="open" lemma="doctor" pos="N" morphofeat="NN">
+      <span>
+        <target id="w74"/>
+      </span>
+    </term>
+    <!--that-->
+    <term tid="t75" type="close" lemma="that" pos="O" morphofeat="WDT">
+      <span>
+        <target id="w75"/>
+      </span>
+    </term>
+    <!--acts-->
+    <term tid="t76" type="open" lemma="act" pos="V" morphofeat="VBZ">
+      <span>
+        <target id="w76"/>
+      </span>
+    </term>
+    <!--as-->
+    <term tid="t77" type="close" lemma="as" pos="P" morphofeat="IN">
+      <span>
+        <target id="w77"/>
+      </span>
+    </term>
+    <!--the-->
+    <term tid="t78" type="close" lemma="the" pos="D" morphofeat="DT">
+      <span>
+        <target id="w78"/>
+      </span>
+    </term>
+    <!--first-->
+    <term tid="t79" type="open" lemma="1" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w79"/>
+      </span>
+    </term>
+    <!--point-->
+    <term tid="t80" type="open" lemma="point" pos="N" morphofeat="NN">
+      <span>
+        <target id="w80"/>
+      </span>
+    </term>
+    <!--of-->
+    <term tid="t81" type="close" lemma="of" pos="P" morphofeat="IN">
+      <span>
+        <target id="w81"/>
+      </span>
+    </term>
+    <!--contact-->
+    <term tid="t82" type="open" lemma="contact" pos="N" morphofeat="NN">
+      <span>
+        <target id="w82"/>
+      </span>
+    </term>
+    <!--for-->
+    <term tid="t83" type="close" lemma="for" pos="P" morphofeat="IN">
+      <span>
+        <target id="w83"/>
+      </span>
+    </term>
+    <!--medical-->
+    <term tid="t84" type="open" lemma="medical" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w84"/>
+      </span>
+    </term>
+    <!--stuff-->
+    <term tid="t85" type="open" lemma="stuff" pos="N" morphofeat="NN">
+      <span>
+        <target id="w85"/>
+      </span>
+    </term>
+    <!--in-->
+    <term tid="t86" type="close" lemma="in" pos="P" morphofeat="IN">
+      <span>
+        <target id="w86"/>
+      </span>
+    </term>
+    <!--The-->
+    <term tid="t87" type="close" lemma="the" pos="D" morphofeat="DT">
+      <span>
+        <target id="w87"/>
+      </span>
+    </term>
+    <!--Netherlands-->
+    <term tid="t88" type="close" lemma="Netherlands" pos="R" morphofeat="NNP">
+      <span>
+        <target id="w88"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t89" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w89"/>
+      </span>
+    </term>
+    <!--A-->
+    <term tid="t90" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w90"/>
+      </span>
+    </term>
+    <!--"huisarts-->
+    <term tid="t91" type="open" lemma="&quot;huisarts" pos="N" morphofeat="NNS">
+      <span>
+        <target id="w91"/>
+      </span>
+    </term>
+    <!--"-->
+    <term tid="t92" type="close" lemma="&quot;" pos="O" morphofeat="WDT">
+      <span>
+        <target id="w92"/>
+      </span>
+    </term>
+    <!--will-->
+    <term tid="t93" type="close" lemma="will" pos="O" morphofeat="MD">
+      <span>
+        <target id="w93"/>
+      </span>
+    </term>
+    <!--diagnose-->
+    <term tid="t94" type="open" lemma="diagnose" pos="V" morphofeat="VB">
+      <span>
+        <target id="w94"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t95" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w95"/>
+      </span>
+    </term>
+    <!--problem-->
+    <term tid="t96" type="open" lemma="problem" pos="N" morphofeat="NN">
+      <span>
+        <target id="w96"/>
+      </span>
+      <sentiment polarity="negative" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--and-->
+    <term tid="t97" type="close" lemma="and" pos="C" morphofeat="CC">
+      <span>
+        <target id="w97"/>
+      </span>
+    </term>
+    <!--either-->
+    <term tid="t98" type="close" lemma="either" pos="D" morphofeat="DT">
+      <span>
+        <target id="w98"/>
+      </span>
+    </term>
+    <!--prescribe-->
+    <term tid="t99" type="open" lemma="prescribe" pos="N" morphofeat="NN">
+      <span>
+        <target id="w99"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t100" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w100"/>
+      </span>
+    </term>
+    <!--medicine-->
+    <term tid="t101" type="open" lemma="medicine" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w101"/>
+      </span>
+    </term>
+    <!--or-->
+    <term tid="t102" type="close" lemma="or" pos="C" morphofeat="CC">
+      <span>
+        <target id="w102"/>
+      </span>
+    </term>
+    <!--give-->
+    <term tid="t103" type="open" lemma="give" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w103"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t104" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w104"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t105" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w105"/>
+      </span>
+    </term>
+    <!--written-->
+    <term tid="t106" type="open" lemma="write" pos="V" morphofeat="VBN">
+      <span>
+        <target id="w106"/>
+      </span>
+    </term>
+    <!--reference-->
+    <term tid="t107" type="open" lemma="reference" pos="N" morphofeat="NN">
+      <span>
+        <target id="w107"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t108" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w108"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t109" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w109"/>
+      </span>
+    </term>
+    <!--hospital-->
+    <term tid="t110" type="open" lemma="hospital" pos="N" morphofeat="NN">
+      <span>
+        <target id="w110"/>
+      </span>
+    </term>
+    <!--or-->
+    <term tid="t111" type="close" lemma="or" pos="C" morphofeat="CC">
+      <span>
+        <target id="w111"/>
+      </span>
+    </term>
+    <!--other-->
+    <term tid="t112" type="open" lemma="other" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w112"/>
+      </span>
+    </term>
+    <!--medical-->
+    <term tid="t113" type="open" lemma="medical" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w113"/>
+      </span>
+    </term>
+    <!--specialist-->
+    <term tid="t114" type="open" lemma="specialist" pos="N" morphofeat="NN">
+      <span>
+        <target id="w114"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t115" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w115"/>
+      </span>
+    </term>
+    <!--You-->
+    <term tid="t116" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w116"/>
+      </span>
+    </term>
+    <!--will-->
+    <term tid="t117" type="close" lemma="will" pos="O" morphofeat="MD">
+      <span>
+        <target id="w117"/>
+      </span>
+    </term>
+    <!--most-->
+    <term tid="t118" type="open" lemma="much" pos="A" morphofeat="RBS">
+      <span>
+        <target id="w118"/>
+      </span>
+      <sentiment resource="VUA_olery_lexicon_en_lmf" sentiment_modifier="intensifier"/>
+    </term>
+    <!--likely-->
+    <term tid="t119" type="open" lemma="likely" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w119"/>
+      </span>
+    </term>
+    <!--be-->
+    <term tid="t120" type="open" lemma="be" pos="V" morphofeat="VB">
+      <span>
+        <target id="w120"/>
+      </span>
+    </term>
+    <!--able-->
+    <term tid="t121" type="open" lemma="able" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w121"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t122" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w122"/>
+      </span>
+    </term>
+    <!--find-->
+    <term tid="t123" type="open" lemma="find" pos="V" morphofeat="VB">
+      <span>
+        <target id="w123"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t124" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w124"/>
+      </span>
+    </term>
+    <!--"huisarts-->
+    <term tid="t125" type="open" lemma="&quot;huisarts" pos="N" morphofeat="NNS">
+      <span>
+        <target id="w125"/>
+      </span>
+    </term>
+    <!--"-->
+    <term tid="t126" type="open" lemma="&quot;" pos="N" morphofeat="NN">
+      <span>
+        <target id="w126"/>
+      </span>
+    </term>
+    <!--on-->
+    <term tid="t127" type="close" lemma="on" pos="P" morphofeat="IN">
+      <span>
+        <target id="w127"/>
+      </span>
+    </term>
+    <!--Google-->
+    <term tid="t128" type="close" lemma="Google" pos="R" morphofeat="NNP">
+      <span>
+        <target id="w128"/>
+      </span>
+    </term>
+    <!--Maps-->
+    <term tid="t129" type="close" lemma="Maps" pos="R" morphofeat="NNPS">
+      <span>
+        <target id="w129"/>
+      </span>
+    </term>
+    <!--,-->
+    <term tid="t130" type="close" lemma="," pos="O" morphofeat=",">
+      <span>
+        <target id="w130"/>
+      </span>
+    </term>
+    <!--or-->
+    <term tid="t131" type="close" lemma="or" pos="C" morphofeat="CC">
+      <span>
+        <target id="w131"/>
+      </span>
+    </term>
+    <!--ask-->
+    <term tid="t132" type="open" lemma="ask" pos="V" morphofeat="VB">
+      <span>
+        <target id="w132"/>
+      </span>
+    </term>
+    <!--your-->
+    <term tid="t133" type="close" lemma="your" pos="Q" morphofeat="PRP$">
+      <span>
+        <target id="w133"/>
+      </span>
+    </term>
+    <!--hotel-->
+    <term tid="t134" type="open" lemma="hotel" pos="N" morphofeat="NN">
+      <span>
+        <target id="w134"/>
+      </span>
+    </term>
+    <!--staff-->
+    <term tid="t135" type="open" lemma="staff" pos="N" morphofeat="NN">
+      <span>
+        <target id="w135"/>
+      </span>
+    </term>
+    <!--or-->
+    <term tid="t136" type="close" lemma="or" pos="C" morphofeat="CC">
+      <span>
+        <target id="w136"/>
+      </span>
+    </term>
+    <!--B&B-->
+    <term tid="t137" type="open" lemma="B&amp;B" pos="N" morphofeat="NN">
+      <span>
+        <target id="w137"/>
+      </span>
+    </term>
+    <!--host-->
+    <term tid="t138" type="open" lemma="host" pos="N" morphofeat="NN">
+      <span>
+        <target id="w138"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t139" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w139"/>
+      </span>
+    </term>
+    <!--be-->
+    <term tid="t140" type="open" lemma="be" pos="V" morphofeat="VB">
+      <span>
+        <target id="w150"/>
+      </span>
+    </term>
+    <!--able-->
+    <term tid="t141" type="open" lemma="able" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w151"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t142" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w152"/>
+      </span>
+    </term>
+    <!--point-->
+    <term tid="t143" type="open" lemma="point" pos="V" morphofeat="VB">
+      <span>
+        <target id="w153"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t144" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w154"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t145" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w155"/>
+      </span>
+    </term>
+    <!--one-->
+    <term tid="t146" type="close" lemma="one" pos="O" morphofeat="CD">
+      <span>
+        <target id="w156"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t147" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w157"/>
+      </span>
+    </term>
+    <!--Every-->
+    <term tid="t148" type="close" lemma="every" pos="D" morphofeat="DT">
+      <span>
+        <target id="w140"/>
+      </span>
+      <sentiment resource="VUA_olery_lexicon_en_lmf" sentiment_modifier="intensifier"/>
+    </term>
+    <!--Dutch-->
+    <term tid="t149" type="close" lemma="Dutch" pos="R" morphofeat="NNP">
+      <span>
+        <target id="w141"/>
+      </span>
+    </term>
+    <!--person-->
+    <term tid="t150" type="open" lemma="person" pos="N" morphofeat="NN">
+      <span>
+        <target id="w142"/>
+      </span>
+    </term>
+    <!--will-->
+    <term tid="t151" type="close" lemma="will" pos="O" morphofeat="MD">
+      <span>
+        <target id="w143"/>
+      </span>
+    </term>
+    <!--know-->
+    <term tid="t152" type="open" lemma="know" pos="V" morphofeat="VB">
+      <span>
+        <target id="w144"/>
+      </span>
+    </term>
+    <!--what-->
+    <term tid="t153" type="close" lemma="what" pos="Q" morphofeat="WP">
+      <span>
+        <target id="w145"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t154" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w146"/>
+      </span>
+    </term>
+    <!--mean-->
+    <term tid="t155" type="open" lemma="mean" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w147"/>
+      </span>
+    </term>
+    <!--and-->
+    <term tid="t156" type="close" lemma="and" pos="C" morphofeat="CC">
+      <span>
+        <target id="w148"/>
+      </span>
+    </term>
+    <!--should-->
+    <term tid="t157" type="close" lemma="should" pos="O" morphofeat="MD">
+      <span>
+        <target id="w149"/>
+      </span>
+    </term>
+    <!--spot-->
+    <term tid="t158" type="open" lemma="spot" pos="N" morphofeat="NN">
+      <span>
+        <target id="w176"/>
+      </span>
+    </term>
+    <!--in-->
+    <term tid="t159" type="close" lemma="in" pos="P" morphofeat="IN">
+      <span>
+        <target id="w177"/>
+      </span>
+    </term>
+    <!--the-->
+    <term tid="t160" type="close" lemma="the" pos="D" morphofeat="DT">
+      <span>
+        <target id="w178"/>
+      </span>
+    </term>
+    <!--agenda-->
+    <term tid="t161" type="open" lemma="agenda" pos="N" morphofeat="NN">
+      <span>
+        <target id="w179"/>
+      </span>
+    </term>
+    <!--and-->
+    <term tid="t162" type="close" lemma="and" pos="C" morphofeat="CC">
+      <span>
+        <target id="w180"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t163" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w181"/>
+      </span>
+    </term>
+    <!--make-->
+    <term tid="t164" type="open" lemma="make" pos="V" morphofeat="VB">
+      <span>
+        <target id="w182"/>
+      </span>
+    </term>
+    <!--an-->
+    <term tid="t165" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w183"/>
+      </span>
+    </term>
+    <!--appointment-->
+    <term tid="t166" type="open" lemma="appointment" pos="N" morphofeat="NN">
+      <span>
+        <target id="w184"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t167" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w185"/>
+      </span>
+    </term>
+    <!--It-->
+    <term tid="t168" type="close" lemma="it" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w158"/>
+      </span>
+    </term>
+    <!--'s-->
+    <term tid="t169" type="open" lemma="have" pos="V" morphofeat="VBZ">
+      <span>
+        <target id="w159"/>
+      </span>
+    </term>
+    <!--worth-->
+    <term tid="t170" type="open" lemma="worth" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w160"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--it-->
+    <term tid="t171" type="close" lemma="it" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w161"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t172" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w162"/>
+      </span>
+    </term>
+    <!--call-->
+    <term tid="t173" type="open" lemma="call" pos="V" morphofeat="VB">
+      <span>
+        <target id="w163"/>
+      </span>
+    </term>
+    <!--the-->
+    <term tid="t174" type="close" lemma="the" pos="D" morphofeat="DT">
+      <span>
+        <target id="w164"/>
+      </span>
+    </term>
+    <!--"huisarts-->
+    <term tid="t175" type="open" lemma="&quot;huisarts" pos="N" morphofeat="NNS">
+      <span>
+        <target id="w165"/>
+      </span>
+    </term>
+    <!--"-->
+    <term tid="t176" type="open" lemma="&quot;" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w166"/>
+      </span>
+    </term>
+    <!--in-->
+    <term tid="t177" type="close" lemma="in" pos="P" morphofeat="IN">
+      <span>
+        <target id="w167"/>
+      </span>
+    </term>
+    <!--advance-->
+    <term tid="t178" type="open" lemma="advance" pos="N" morphofeat="NN">
+      <span>
+        <target id="w168"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t179" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w169"/>
+      </span>
+    </term>
+    <!--check-->
+    <term tid="t180" type="open" lemma="check" pos="V" morphofeat="VB">
+      <span>
+        <target id="w170"/>
+      </span>
+    </term>
+    <!--if-->
+    <term tid="t181" type="close" lemma="if" pos="P" morphofeat="IN">
+      <span>
+        <target id="w171"/>
+      </span>
+    </term>
+    <!--they-->
+    <term tid="t182" type="close" lemma="they" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w172"/>
+      </span>
+    </term>
+    <!--have-->
+    <term tid="t183" type="open" lemma="have" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w173"/>
+      </span>
+    </term>
+    <!--an-->
+    <term tid="t184" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w174"/>
+      </span>
+    </term>
+    <!--open-->
+    <term tid="t185" type="open" lemma="open" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w175"/>
+      </span>
+    </term>
+    <!--waiting-->
+    <term tid="t186" type="open" lemma="wait" pos="V" morphofeat="VBG">
+      <span>
+        <target id="w192"/>
+      </span>
+      <sentiment polarity="negative" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--room-->
+    <term tid="t187" type="open" lemma="room" pos="N" morphofeat="NN">
+      <span>
+        <target id="w193"/>
+      </span>
+    </term>
+    <!--for-->
+    <term tid="t188" type="close" lemma="for" pos="P" morphofeat="IN">
+      <span>
+        <target id="w194"/>
+      </span>
+    </term>
+    <!--quite-->
+    <term tid="t189" type="open" lemma="quite" pos="A" morphofeat="RB">
+      <span>
+        <target id="w195"/>
+      </span>
+      <sentiment resource="VUA_olery_lexicon_en_lmf" sentiment_modifier="intensifier"/>
+    </term>
+    <!--some-->
+    <term tid="t190" type="close" lemma="some" pos="D" morphofeat="DT">
+      <span>
+        <target id="w196"/>
+      </span>
+    </term>
+    <!--time-->
+    <term tid="t191" type="open" lemma="time" pos="N" morphofeat="NN">
+      <span>
+        <target id="w197"/>
+      </span>
+    </term>
+    <!--.-->
+    <term tid="t192" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w198"/>
+      </span>
+    </term>
+    <!--Otherwise-->
+    <term tid="t193" type="open" lemma="otherwise" pos="A" morphofeat="RB">
+      <span>
+        <target id="w186"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t194" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w187"/>
+      </span>
+    </term>
+    <!--risk-->
+    <term tid="t195" type="open" lemma="risk" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w188"/>
+      </span>
+      <sentiment polarity="negative" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--sitting-->
+    <term tid="t196" type="open" lemma="sit" pos="V" morphofeat="VBG">
+      <span>
+        <target id="w189"/>
+      </span>
+    </term>
+    <!--in-->
+    <term tid="t197" type="close" lemma="in" pos="P" morphofeat="IN">
+      <span>
+        <target id="w190"/>
+      </span>
+    </term>
+    <!--a-->
+    <term tid="t198" type="close" lemma="a" pos="D" morphofeat="DT">
+      <span>
+        <target id="w191"/>
+      </span>
+    </term>
+    <!--I-->
+    <term tid="t199" type="close" lemma="i" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w210"/>
+      </span>
+    </term>
+    <!--'ll-->
+    <term tid="t200" type="close" lemma="'ll" pos="O" morphofeat="MD">
+      <span>
+        <target id="w211"/>
+      </span>
+    </term>
+    <!--be-->
+    <term tid="t201" type="open" lemma="be" pos="V" morphofeat="VB">
+      <span>
+        <target id="w212"/>
+      </span>
+    </term>
+    <!--in-->
+    <term tid="t202" type="open" lemma="in" pos="A" morphofeat="RB">
+      <span>
+        <target id="w213"/>
+      </span>
+    </term>
+    <!--Amsterdam-->
+    <term tid="t203" type="close" lemma="Amsterdam" pos="R" morphofeat="NNP">
+      <span>
+        <target id="w214"/>
+      </span>
+    </term>
+    <!--later-->
+    <term tid="t204" type="open" lemma="later" pos="A" morphofeat="RB">
+      <span>
+        <target id="w215"/>
+      </span>
+    </term>
+    <!--this-->
+    <term tid="t205" type="close" lemma="this" pos="D" morphofeat="DT">
+      <span>
+        <target id="w216"/>
+      </span>
+    </term>
+    <!--Feel-->
+    <term tid="t206" type="close" lemma="Feel" pos="R" morphofeat="NNP">
+      <span>
+        <target id="w199"/>
+      </span>
+    </term>
+    <!--free-->
+    <term tid="t207" type="open" lemma="free" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w200"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--to-->
+    <term tid="t208" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w201"/>
+      </span>
+    </term>
+    <!--PM-->
+    <term tid="t209" type="open" lemma="PM" pos="V" morphofeat="VB">
+      <span>
+        <target id="w202"/>
+      </span>
+    </term>
+    <!--me-->
+    <term tid="t210" type="close" lemma="me" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w203"/>
+      </span>
+    </term>
+    <!--if-->
+    <term tid="t211" type="close" lemma="if" pos="P" morphofeat="IN">
+      <span>
+        <target id="w204"/>
+      </span>
+    </term>
+    <!--you-->
+    <term tid="t212" type="close" lemma="you" pos="Q" morphofeat="PRP">
+      <span>
+        <target id="w205"/>
+      </span>
+    </term>
+    <!--need-->
+    <term tid="t213" type="open" lemma="need" pos="V" morphofeat="VBP">
+      <span>
+        <target id="w206"/>
+      </span>
+      <sentiment polarity="negative" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--more-->
+    <term tid="t214" type="open" lemma="more" pos="G" morphofeat="JJR">
+      <span>
+        <target id="w207"/>
+      </span>
+    </term>
+    <!--help-->
+    <term tid="t215" type="open" lemma="help" pos="N" morphofeat="NN">
+      <span>
+        <target id="w208"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--.-->
+    <term tid="t216" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w209"/>
+      </span>
+    </term>
+    <!--Good-->
+    <term tid="t217" type="open" lemma="good" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w231"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--luck-->
+    <term tid="t218" type="open" lemma="luck" pos="N" morphofeat="NN">
+      <span>
+        <target id="w232"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--!-->
+    <term tid="t219" type="close" lemma="!" pos="O" morphofeat=".">
+      <span>
+        <target id="w233"/>
+      </span>
+    </term>
+    <!--morning-->
+    <term tid="t220" type="open" lemma="morning" pos="N" morphofeat="NN">
+      <span>
+        <target id="w217"/>
+      </span>
+    </term>
+    <!--and-->
+    <term tid="t221" type="close" lemma="and" pos="C" morphofeat="CC">
+      <span>
+        <target id="w218"/>
+      </span>
+    </term>
+    <!--perhaps-->
+    <term tid="t222" type="open" lemma="perhaps" pos="A" morphofeat="RB">
+      <span>
+        <target id="w219"/>
+      </span>
+    </term>
+    <!--my-->
+    <term tid="t223" type="close" lemma="my" pos="Q" morphofeat="PRP$">
+      <span>
+        <target id="w220"/>
+      </span>
+    </term>
+    <!--colleagues-->
+    <term tid="t224" type="open" lemma="colleague" pos="N" morphofeat="NNS">
+      <span>
+        <target id="w221"/>
+      </span>
+    </term>
+    <!--might-->
+    <term tid="t225" type="close" lemma="may" pos="O" morphofeat="MD">
+      <span>
+        <target id="w222"/>
+      </span>
+    </term>
+    <!--be-->
+    <term tid="t226" type="open" lemma="be" pos="V" morphofeat="VB">
+      <span>
+        <target id="w223"/>
+      </span>
+    </term>
+    <!--able-->
+    <term tid="t227" type="open" lemma="able" pos="G" morphofeat="JJ">
+      <span>
+        <target id="w224"/>
+      </span>
+    </term>
+    <!--to-->
+    <term tid="t228" type="close" lemma="to" pos="P" morphofeat="TO">
+      <span>
+        <target id="w225"/>
+      </span>
+    </term>
+    <!--help-->
+    <term tid="t229" type="open" lemma="help" pos="V" morphofeat="VB">
+      <span>
+        <target id="w226"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--out-->
+    <term tid="t230" type="open" lemma="out" pos="A" morphofeat="RB">
+      <span>
+        <target id="w227"/>
+      </span>
+    </term>
+    <!--as-->
+    <term tid="t231" type="open" lemma="as" pos="A" morphofeat="RB">
+      <span>
+        <target id="w228"/>
+      </span>
+    </term>
+    <!--well-->
+    <term tid="t232" type="open" lemma="well" pos="A" morphofeat="RB">
+      <span>
+        <target id="w229"/>
+      </span>
+      <sentiment polarity="positive" resource="VUA_olery_lexicon_en_lmf"/>
+    </term>
+    <!--.-->
+    <term tid="t233" type="close" lemma="." pos="O" morphofeat=".">
+      <span>
+        <target id="w230"/>
+      </span>
+    </term>
+  </terms>
+  <features/>
+  <opinions>
+    <opinion oid="o_1">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="negative" strength="1">
+        <span>
+          <target id="t16"/>
+          <target id="t17"/>
+          <target id="t18"/>
+          <target id="t19"/>
+          <target id="t20"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_2">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <target id="t37"/>
+          <target id="t38"/>
+          <target id="t39"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_3">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="negative" strength="1">
+        <span>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_4">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="negative" strength="1">
+        <span>
+          <target id="t195"/>
+          <target id="t196"/>
+          <target id="t197"/>
+          <target id="t198"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_5">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="negative" strength="1">
+        <span>
+          <target id="t186"/>
+          <target id="t187"/>
+          <target id="t188"/>
+          <target id="t189"/>
+          <target id="t190"/>
+          <target id="t191"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_6">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <target id="t207"/>
+          <target id="t208"/>
+          <target id="t209"/>
+          <target id="t210"/>
+          <target id="t211"/>
+          <target id="t212"/>
+          <target id="t213"/>
+          <target id="t214"/>
+          <target id="t215"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_7">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <target id="t229"/>
+          <target id="t230"/>
+          <target id="t231"/>
+          <target id="t232"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion oid="o_8">
+      <opinion_holder>
+        <span/>
+      </opinion_holder>
+      <opinion_target>
+        <span/>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <target id="t217"/>
+          <target id="t218"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+  </opinions>
+</KAF>

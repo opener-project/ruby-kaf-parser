@@ -1,0 +1,18 @@
+require 'nokogiri'
+require 'time'
+
+require_relative 'kaf_parser/version'
+require_relative 'kaf_parser/sax_parser'
+require_relative 'kaf_parser/parser'
+
+require_relative 'kaf_parser/element/base'
+require_relative 'kaf_parser/element/document'
+require_relative 'kaf_parser/element/header'
+require_relative 'kaf_parser/element/linguistic_processor'
+require_relative 'kaf_parser/element/linguistic_processors'
+require_relative 'kaf_parser/element/opinion'
+require_relative 'kaf_parser/element/opinion_expression'
+require_relative 'kaf_parser/element/property'
+require_relative 'kaf_parser/element/sentiment'
+require_relative 'kaf_parser/element/term'
+require_relative 'kaf_parser/element/word_form'
