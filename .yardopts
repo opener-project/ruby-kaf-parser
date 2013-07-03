@@ -1,0 +1,11 @@
+./lib/opener/kaf_parser/**/*.rb ./lib/opener/kaf_parser/.rb
+-m markdown
+-M redcarpet
+-o ./doc/build
+-r ./README.md
+--private
+--protected
+--asset ./doc/css/common.css:css/common.css
+-
+./doc/*.md
+LICENSE
