@@ -272,7 +272,7 @@ module Opener
       def on_opinion_expression(attr)
         @stack << Element::OpinionExpression.new(
           :polarity => attr['polarity'],
-          :strength => attr['strength']
+          :strength => attr['strength'].to_i
         )
 
         @buffer_targets = true

@@ -1,8 +1,7 @@
 require 'bundler/gem_tasks'
 
-desc 'Runs the tests'
-task :test do
-  sh('rspec spec')
+Dir[File.expand_path('../task/*.rake', __FILE__)].each do |task|
+  import(task)
 end
 
 task :default => :test
