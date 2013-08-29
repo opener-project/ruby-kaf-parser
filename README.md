@@ -9,7 +9,7 @@ handle large KAF files without too much trouble.
 
 ## Usage
 
-Basic usage is as following:
+Basic low level parsing is as following:
 
     require 'opener/kaf_parser'
 
@@ -19,7 +19,18 @@ Basic usage is as following:
 
     puts document.word_forms.first.text # => "Something ..."
 
-For more information see the documentation of `Opener::KafParser::SaxParser`.
+There are also a few high level classes that let you reconstruct parts of the
+original text, retrieve opinions and retrieving lists of words and their
+polarity. For example, to get a list of the opinions you'd do the following:
+
+    # ...
+
+    document    = parser.parse(input)
+    constructor = Opener::KafParser::OpinionList.new(document)
+    opinions    = constructor.construct
+
+    opinions[0].polarity                # => "positive"
+    opinions[0].expression.map(&:value) # => ["You", "did", "great"]
 
 ## Requirements
 
