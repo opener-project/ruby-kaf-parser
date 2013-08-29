@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.description = gem.summary
   gem.has_rdoc    = 'yard'
 
-  gem.required_ruby_version = '>= 1.9.2'
+  gem.required_ruby_version = '>= 1.9.3'
 
   gem.files       = `git ls-files`.split("\n").sort
   gem.executables = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

@@ -34,7 +34,7 @@ polarity. For example, to get a list of the opinions you'd do the following:
 
 ## Requirements
 
-* Ruby 1.9.2 or newer
+* Ruby 1.9.3 or newer
 * libxml2 (newer versions of Nokogiri ship libxml themselves)
 
 ## Installation:
