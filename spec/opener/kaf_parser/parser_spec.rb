@@ -115,5 +115,13 @@ describe Opener::KafParser::Parser do
     it 'should set the expression targets' do
       opinion.expression.targets.should == (207..215).map { |n| "t#{n}" }
     end
+
+    it 'should set the opinion holder' do
+      @document.opinions[0].holder.should == ['t1']
+    end
+
+    it 'should set the opinion target' do
+      @document.opinions[0].target.should == ['t1']
+    end
   end
 end

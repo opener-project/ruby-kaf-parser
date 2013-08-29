@@ -1670,10 +1670,16 @@
   <opinions>
     <opinion oid="o_1">
       <opinion_holder>
-        <span/>
+        <span>
+          <!-- This target was added manually for the tests. -->
+          <target id="t1"/>
+        </span>
       </opinion_holder>
       <opinion_target>
-        <span/>
+        <span>
+          <!-- This target was added manually for the tests. -->
+          <target id="t1"/>
+        </span>
       </opinion_target>
       <opinion_expression polarity="negative" strength="1">
         <span>

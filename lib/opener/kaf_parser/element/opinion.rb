@@ -10,8 +10,14 @@ module Opener
       # @!attribute [rw] expression
       #  @return [Opener::KafParser::Element::OpinionExpression]
       #
+      # @!attribute [rw] holder
+      #  @return [Array]
+      #
+      # @!attribute [rw] target
+      #  @return [Array]
+      #
       class Opinion < Base
-        attr_accessor :id, :expression
+        attr_accessor :id, :holder, :target, :expression
       end # Opinion
     end # Element
   end # KafParser

@@ -11,11 +11,13 @@ describe Opener::KafParser::OpinionList do
   end
 
   example 'set the opinion holder' do
-    pending 'Update the fixture to include opinion holder data'
+    opinion.holder[0].id.should    == 'w1'
+    opinion.holder[0].value.should == 'You'
   end
 
-  example 'set the opinion targets' do
-    pending 'Update the fixture to include opinion target data'
+  example 'set the opinion target' do
+    opinion.target[0].id.should    == 'w1'
+    opinion.target[0].value.should == 'You'
   end
 
   example 'set the polarity of an opinion' do

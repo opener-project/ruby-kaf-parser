@@ -265,6 +265,38 @@ module Opener
       end
 
       ##
+      # @param [Hash] attr
+      #
+      def on_opinion_holder(attr)
+        @buffer_targets = true
+      end
+
+      ##
+      # @see #on_opinion_holder
+      #
+      def after_opinion_holder
+        current_object.holder = @targets
+
+        reset_target_buffer
+      end
+
+      ##
+      # @param [Hash] attr
+      #
+      def on_opinion_target(attr)
+        @buffer_targets = true
+      end
+
+      ##
+      # @see #on_opinion_target
+      #
+      def after_opinion_target
+        current_object.target = @targets
+
+        reset_target_buffer
+      end
+
+      ##
       # Processes an `<opinion-expression>` node.
       #
       # @param [Hash] attr

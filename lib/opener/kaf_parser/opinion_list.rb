@@ -27,15 +27,16 @@ module Opener
         term_mapping = create_term_mapping
 
         document.opinions.each do |opinion|
+          exp        = opinion.expression
           expression = []
+          holder     = []
+          target     = []
 
-          opinion.expression.targets.each do |target|
-            word_id = term_mapping[target]
+          map_words(exp.targets, expression, term_mapping, word_mapping)
+          map_words(opinion.holder, holder, term_mapping, word_mapping)
+          map_words(opinion.target, target, term_mapping, word_mapping)
 
-            expression << word_mapping[word_id]
-          end
-
-          opinions << create_opinion_node(opinion, expression)
+          opinions << create_opinion_node(opinion, expression, holder, target)
         end
 
         return opinions
@@ -44,16 +45,42 @@ module Opener
       private
 
       ##
+      # @param [Array] source
+      # @param [Array] destination
+      # @param [Hash] term_mapping
+      # @param [Hash] word_mapping
+      #
+      def map_words(source, destination, term_mapping, word_mapping)
+        source.each do |id|
+          destination << find_word(id, term_mapping, word_mapping)
+        end
+      end
+
+      ##
+      # @param [String] id
+      # @param [Hash] term_mapping
+      # @param [Hash] word_mapping
+      # @return [Opener::KafParser::Node::Text]
+      #
+      def find_word(id, term_mapping, word_mapping)
+        return word_mapping[term_mapping[id]]
+      end
+
+      ##
       # @param [Opener::KafParser::Element::OpinionExpression] opinion
       # @param [Array<Opener::KafParser::Node::Text>] expression
+      # @param [Array<Opener::KafParser::Node::Text>] holder
+      # @param [Array<Opener::KafParser::Node::Text>] target
       # @return [Opener::KafParser::Node::Opinion]
       #
-      def create_opinion_node(opinion, expression)
+      def create_opinion_node(opinion, expression, holder, target)
         return Node::Opinion.new(
           :id         => opinion.id,
           :expression => expression,
           :polarity   => opinion.expression.polarity,
-          :strength   => opinion.expression.strength
+          :strength   => opinion.expression.strength,
+          :holder     => holder,
+          :target     => target
         )
       end
 
