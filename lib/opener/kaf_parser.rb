@@ -16,3 +16,11 @@ require_relative 'kaf_parser/element/property'
 require_relative 'kaf_parser/element/sentiment'
 require_relative 'kaf_parser/element/term'
 require_relative 'kaf_parser/element/word_form'
+
+require_relative 'kaf_parser/node/base'
+require_relative 'kaf_parser/node/text'
+require_relative 'kaf_parser/node/opinion'
+
+require_relative 'kaf_parser/text_list'
+require_relative 'kaf_parser/opinion_list'
+require_relative 'kaf_parser/text_constructor'
