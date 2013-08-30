@@ -44,6 +44,8 @@ module Opener
         #
         def after_initialize
           @type = :text
+
+          @length ||= value.length
         end
       end # Generic
     end # AST

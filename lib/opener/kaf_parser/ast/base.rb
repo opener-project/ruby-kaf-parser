@@ -49,6 +49,20 @@ module Opener
 
           return segments.join(' ') + ')'
         end
+
+        ##
+        # @return [TrueClass|FalseClass]
+        #
+        def text?
+          return type == :text
+        end
+
+        ##
+        # @return [TrueClass|FalseClass]
+        #
+        def opinion?
+          return type == :opinion
+        end
       end # Base
     end # AST
   end # KafParser

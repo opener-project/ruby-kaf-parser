@@ -11,4 +11,4 @@ require_relative 'kaf_parser/ast/opinion'
 require_relative 'kaf_parser/sax_parser'
 require_relative 'kaf_parser/parser'
 
-require_relative 'kaf_parser/text_constructor'
+require_relative 'kaf_parser/presenter/text'
