@@ -33,6 +33,19 @@ module Opener
           @holder ||= []
           @target ||= []
         end
+
+        ##
+        # @return [Hash]
+        #
+        def attributes
+          return {
+            :id       => id,
+            :holder   => holder,
+            :target   => target,
+            :polarity => polarity,
+            :strength => strength
+          }
+        end
       end # Opinion
     end # AST
   end # KafParser

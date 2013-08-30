@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'time'
+require 'builder'
 
 require_relative 'kaf_parser/version'
 
@@ -12,3 +13,4 @@ require_relative 'kaf_parser/sax_parser'
 require_relative 'kaf_parser/parser'
 
 require_relative 'kaf_parser/presenter/text'
+require_relative 'kaf_parser/presenter/html'

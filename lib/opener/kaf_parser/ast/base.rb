@@ -51,6 +51,13 @@ module Opener
         end
 
         ##
+        # @return [Hash]
+        #
+        def attributes
+          return {}
+        end
+
+        ##
         # @return [TrueClass|FalseClass]
         #
         def text?

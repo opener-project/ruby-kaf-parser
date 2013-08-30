@@ -47,6 +47,24 @@ module Opener
 
           @length ||= value.length
         end
+
+        ##
+        # @return [Hash]
+        #
+        def attributes
+          return {
+            :id                 => id,
+            :sentence           => sentence,
+            :paragraph          => paragraph,
+            :offset             => offset,
+            :length             => length,
+            :word_type          => word_type,
+            :pos                => pos,
+            :morphofeat         => morphofeat,
+            :sentiment_modifier => sentiment_modifier,
+            :polarity           => polarity
+          }
+        end
       end # Generic
     end # AST
   end # KafParser

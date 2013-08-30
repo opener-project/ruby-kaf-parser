@@ -20,6 +20,13 @@ module Opener
         def after_initialize
           @type = :document
         end
+
+        ##
+        # @return [Hash]
+        #
+        def attributes
+          return {:language => language, :version => version}
+        end
       end # Document
     end # AST
   end # KafParser

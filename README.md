@@ -39,6 +39,17 @@ following:
       end
     end
 
+## Presenting Text
+
+To present an AST/text you can use one of the standard presenter classes. For
+example, if you want to turn an AST in a regular Ruby String you can use the
+Text presenter:
+
+    ast       = parser.parse('...')
+    presenter = Opener::KafParser::Presenter::Text.new
+
+    puts presenter.present(ast) # => "Hello, you are doing great"
+
 ## Requirements
 
 * Ruby 1.9.3 or newer
