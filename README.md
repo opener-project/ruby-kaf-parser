@@ -50,6 +50,11 @@ Text presenter:
 
     puts presenter.present(ast) # => "Hello, you are doing great"
 
+Currently the following presenters are available:
+
+* `Opener::KafParser::Presenter::Text`
+* `Opener::KafParser::Presenter::HTML`
+
 ## Requirements
 
 * Ruby 1.9.3 or newer
