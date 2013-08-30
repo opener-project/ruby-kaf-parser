@@ -5,12 +5,12 @@ describe Opener::KafParser::TextConstructor do
 
   before :all do
     @nodes = [
-      Opener::KafParser::Node::Text.new(
+      Opener::KafParser::AST::Text.new(
         :value  => 'Hello',
         :length => 5,
         :offset => 0
       ),
-      Opener::KafParser::Node::Text.new(
+      Opener::KafParser::AST::Text.new(
         :value  => 'world',
         :length => 5,
         :offset => 6

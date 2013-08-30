@@ -254,6 +254,8 @@
       <span>
         <target id="w1"/>
       </span>
+      <!-- This is a fixture sentiment. Remove it at your own peril. -->
+      <sentiment polarity="negative" resource="VUA_olery_lexicon_en_lmf" sentiment_modifier="intensifier"/>
     </term>
     <!--are-->
     <term tid="t2" type="open" lemma="be" pos="V" morphofeat="VBP">

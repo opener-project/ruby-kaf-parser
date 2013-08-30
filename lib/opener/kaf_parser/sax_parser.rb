@@ -17,11 +17,14 @@ module Opener
         super
 
         @stack             = []
+        @attributes        = []
         @document          = nil
         @characters        = ''
         @targets           = []
         @buffer_characters = false
         @buffer_targets    = false
+        @word_mapping      = {}
+        @term_mapping    = {}
       end
 
       ##
@@ -62,7 +65,7 @@ module Opener
       # @param [Hash] attr
       #
       def on_kaf(attr)
-        @stack << Element::Document.new(
+        @stack << AST::Document.new(
           :language => attr.fetch('xml:lang', 'en'),
           :version  => attr['version']
         )
@@ -74,75 +77,13 @@ module Opener
       def after_kaf
         @document = @stack.pop
       end
-
-      ##
-      # Processes the header element of the KAF document.
-      #
-      # @param [Hash] attr
-      #
-      def on_kaf_header(attr)
-        @stack << Element::Header.new
-      end
-
-      ##
-      # @see #on_kaf_header
-      #
-      def after_kaf_header
-        header                = @stack.pop
-        current_object.header = header
-      end
-
-      ##
-      # Processes a linguistic processor node.
-      #
-      # @param [Hash] attr
-      #
-      def on_linguistic_processor(attr)
-        @stack << Element::LinguisticProcessors.new(:layer => attr['layer'])
-      end
-
-      alias on_linguistic_processors on_linguistic_processor
-
-      ##
-      # @see on_linguistic_processor
-      #
-      def after_linguistic_processor
-        processors = @stack.pop
-
-        current_object.linguistic_processors << processors
-      end
-
-      alias after_linguistic_processors after_linguistic_processor
-
-      ##
-      # Processes an `<lp>` node.
-      #
-      # @param [Hash] attr
-      #
-      def on_lp(attr)
-        @stack << Element::LinguisticProcessor.new(
-          :time    => (Time.parse(attr['timestamp']) rescue nil),
-          :version => attr['version'],
-          :name    => attr['name']
-        )
-      end
-
-      ##
-      # @see #on_lp
-      #
-      def after_lp
-        lp = @stack.pop
-
-        current_object.processors << lp
-      end
-
       ##
       # Processes a `<wf>` node.
       #
       # @param [Hash] attr
       #
       def on_wf(attr)
-        @stack << Element::WordForm.new(
+        @stack << AST::Text.new(
           :id        => attr['wid'],
           :sentence  => attr['sent'].to_i,
           :offset    => attr['offset'].to_i,
@@ -157,10 +98,12 @@ module Opener
       # @see #on_wf
       #
       def after_wf
-        wf      = @stack.pop
-        wf.text = @characters
+        wf       = @stack.pop
+        wf.value = @characters
 
-        current_object.word_forms << wf
+        current_object.children << wf
+
+        @word_mapping[wf.id] = wf
 
         reset_character_buffer
       end
@@ -171,13 +114,7 @@ module Opener
       # @param [Hash] attr
       #
       def on_term(attr)
-        @stack << Element::Term.new(
-          :id         => attr['tid'],
-          :lemma      => attr['lemma'],
-          :morphofeat => attr['morphofeat'],
-          :type       => attr['type'],
-          :pos        => attr['pos']
-        )
+        @attributes << attr
 
         @buffer_targets = true
       end
@@ -186,12 +123,26 @@ module Opener
       # @see #on_term
       #
       def after_term
-        term         = @stack.pop
-        term.targets = @targets
+        attrs, sentiment = @attributes
 
-        current_object.terms << term
+        @targets.each do |target|
+          word = @word_mapping[target]
+
+          word.morphofeat = attrs['morphofeat']
+          word.word_type  = attrs['type']
+          word.pos        = attrs['pos']
+
+          if sentiment
+            word.sentiment_modifier = sentiment['sentiment_modifier']
+            word.polarity           = sentiment['polarity']
+          end
+
+          # Map the term IDs to the word form node.
+          @term_mapping[attrs['tid']] = word
+        end
 
         reset_target_buffer
+        reset_attributes_buffer
       end
 
       ##
@@ -209,39 +160,7 @@ module Opener
       # @param [Hash] attr
       #
       def on_sentiment(attr)
-        if current_object.respond_to?(:sentiment=)
-          current_object.sentiment = Element::Sentiment.new(
-            :polarity => attr['polarity'],
-            :resource => attr['resource'],
-            :modifier => attr['sentiment_modifier']
-          )
-        end
-      end
-
-      ##
-      # Processes a `<property>` node.
-      #
-      # @param [Hash] attr
-      #
-      def on_property(attr)
-        @stack << Element::Property.new(
-          :type => attr['type'],
-          :id   => attr['pid']
-        )
-
-        @buffer_targets = true
-      end
-
-      ##
-      # @see #on_attr
-      #
-      def after_property
-        prop            = @stack.pop
-        prop.references = @targets
-
-        current_object.properties << prop
-
-        reset_target_buffer
+        @attributes << attr
       end
 
       ##
@@ -250,18 +169,30 @@ module Opener
       # @param [Hash] attr
       #
       def on_opinion(attr)
-        @stack << Element::Opinion.new(:id => attr['oid'])
+        @stack << AST::Opinion.new(:id => attr['oid'])
       end
 
       ##
       # @see #on_opinion
       #
       def after_opinion
-        expression    = @stack.pop
-        op            = @stack.pop
-        op.expression = expression
+        opinion = @stack.pop
+        remove  = opinion.children.each_with_object({}) do |node, hash|
+          hash[node.id] = true
+        end
 
-        current_object.opinions << op
+        # Insert the opinion node before the first node of the expression.
+        first_index = current_object.children.index(opinion.children[0])
+
+        current_object.children.insert(first_index, opinion)
+
+        # Remove the word nodes from the current object since they have been
+        # moved into the opinion node.
+        current_object.children.each do |node|
+          if node.is_a?(AST::Text) and remove.key?(node.id)
+            current_object.children.delete(node)
+          end
+        end
       end
 
       ##
@@ -275,7 +206,9 @@ module Opener
       # @see #on_opinion_holder
       #
       def after_opinion_holder
-        current_object.holder = @targets
+        @targets.each do |target|
+          current_object.holder << @term_mapping[target]
+        end
 
         reset_target_buffer
       end
@@ -291,7 +224,9 @@ module Opener
       # @see #on_opinion_target
       #
       def after_opinion_target
-        current_object.target = @targets
+        @targets.each do |target|
+          current_object.target << @term_mapping[target]
+        end
 
         reset_target_buffer
       end
@@ -302,10 +237,8 @@ module Opener
       # @param [Hash] attr
       #
       def on_opinion_expression(attr)
-        @stack << Element::OpinionExpression.new(
-          :polarity => attr['polarity'],
-          :strength => attr['strength'].to_i
-        )
+        current_object.polarity = attr['polarity']
+        current_object.strength = attr['strength'].to_i
 
         @buffer_targets = true
       end
@@ -314,7 +247,9 @@ module Opener
       # @see #on_opinion_expression
       #
       def after_opinion_expression
-        @stack.last.targets = @targets
+        @targets.each do |target|
+          current_object.children << @term_mapping[target]
+        end
 
         reset_target_buffer
       end
@@ -372,6 +307,13 @@ module Opener
       def reset_target_buffer
         @buffer_targets = false
         @targets        = []
+      end
+
+      ##
+      # Resets the attributes buffer.
+      #
+      def reset_attributes_buffer
+        @attributes = []
       end
     end # SaxParser
   end # KafParser

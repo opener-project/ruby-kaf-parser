@@ -1,127 +1,99 @@
 require 'spec_helper'
 
 describe Opener::KafParser::Parser do
+  let(:first_node) { @ast.children[0] }
+
   before :all do
-    parser    = Opener::KafParser::Parser.new
-    @document = parser.parse(fixture('input.kaf'))
+    parser = Opener::KafParser::Parser.new
+    @ast   = parser.parse(fixture('input.kaf'))
   end
 
   context 'root document' do
-    it 'should parse the language' do
-      @document.language.should == 'en'
+    example 'set the language' do
+      @ast.language.should == 'en'
     end
 
-    it 'should parse the version' do
-      @document.version.should == 'v1.opener'
-    end
-  end
-
-  context 'linguistic processors' do
-    it 'should correctly set the length' do
-      @document.header.linguistic_processors.length.should == 3
-    end
-
-    it 'should set the layer of each processor' do
-      layers = @document.header.linguistic_processors.map(&:layer)
-
-      layers.should == %w{text terms opinions}
-    end
-
-    it 'set the correct details of an <lp> node' do
-      node = @document.header.linguistic_processors[0].processors[0]
-
-      node.name.should    == 'opennlp-en-tok'
-      node.version.should == '1.0'
-
-      node.time.year.should  == 2013
-      node.time.month.should == 6
-      node.time.day.should   == 27
+    example 'set the version' do
+      @ast.version.should  == 'v1.opener'
     end
   end
 
   context 'word forms' do
-    let(:word_form) { @document.word_forms[0] }
-
-    it 'should set the word ID' do
-      word_form.id.should == 'w1'
+    example 'set the word ID' do
+      first_node.id.should == 'w1'
     end
 
-    it 'should set the sentence attribute' do
-      word_form.sentence.should == 1
+    example 'set the sentence number' do
+      first_node.sentence.should == 1
     end
 
-    it 'should set the paragraph attribute' do
-      word_form.paragraph.should == 1
+    example 'set the paragraph number' do
+      first_node.paragraph.should == 1
     end
 
-    it 'should set the offset' do
-      word_form.offset.should == 0
+    example 'set the character offset' do
+      first_node.offset.should == 0
     end
 
-    it 'should set the length' do
-      word_form.length.should == 3
+    example 'set the length' do
+      first_node.length.should == 3
     end
 
-    it 'should set the text' do
-      word_form.text.should == 'You'
+    example 'set the value' do
+      first_node.value.should == 'You'
     end
   end
 
   context 'terms' do
-    let(:term) { @document.terms[17] }
-
-    it 'should set the term ID' do
-      term.id.should == 't18'
+    example 'set the word word_type' do
+      first_node.word_type.should == 'close'
     end
 
-    it 'should set the type' do
-      term.type.should == 'open'
+    example 'set the POS' do
+      first_node.pos.should == 'Q'
     end
 
-    it 'should set the lemma' do
-      term.lemma.should == 'need'
+    example 'set the morphofeat' do
+      first_node.morphofeat.should == 'PRP'
     end
 
-    it 'should set the POS' do
-      term.pos.should == 'V'
+    example 'set the sentiment modifier' do
+      first_node.sentiment_modifier.should == 'intensifier'
     end
 
-    it 'should set the morphofeat' do
-      term.morphofeat.should == 'VB'
-    end
-
-    it 'should set the targets' do
-      term.targets.should == [@document.word_forms[17].id]
-    end
-
-    it 'should set the sentiment' do
-      term.sentiment.polarity.should        == 'negative'
-      term.sentiment.resource.empty?.should == false
+    example 'set the polarity' do
+      first_node.polarity.should == 'negative'
     end
   end
 
   context 'opinions' do
-    let(:opinion) { @document.opinions[5] }
+    let(:first_opinion) { @ast.children[15] }
 
-    it 'should set the opinion ID' do
-      opinion.id.should == 'o_6'
+    example 'set the opinion ID' do
+      first_opinion.id.should == 'o_1'
     end
 
-    it 'should set the expression' do
-      opinion.expression.polarity.should == 'positive'
-      opinion.expression.strength.should == 1
+    example 'set the opinion holders' do
+      first_opinion.holder[0].id.should    == 'w1'
+      first_opinion.holder[0].value.should == 'You'
     end
 
-    it 'should set the expression targets' do
-      opinion.expression.targets.should == (207..215).map { |n| "t#{n}" }
+    example 'set the opinion target' do
+      first_opinion.target[0].id.should    == 'w1'
+      first_opinion.target[0].value.should == 'You'
     end
 
-    it 'should set the opinion holder' do
-      @document.opinions[0].holder.should == ['t1']
+    example 'set the opinion polarity' do
+      first_opinion.polarity.should == 'negative'
+      first_opinion.strength.should == 1
     end
 
-    it 'should set the opinion target' do
-      @document.opinions[0].target.should == ['t1']
+    example 'set the opinion expression' do
+      first_opinion.children.length.should == 5
+
+      first_opinion.children[0].id.should == 'w16'
+      first_opinion.children[1].id.should == 'w17'
+      first_opinion.children[2].id.should == 'w18'
     end
   end
 end

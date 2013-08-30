@@ -9,28 +9,35 @@ handle large KAF files without too much trouble.
 
 ## Usage
 
-Basic low level parsing is as following:
+Create a parser instance and parse some KAF:
 
     require 'opener/kaf_parser'
 
-    parser   = Opener::KafParser::Parser.new
-    input    = '...'
-    document = parser.parse(input)
+    parser = Opener::KafParser::Parser.new
+    ast    = parser.parse('...')
 
-    puts document.word_forms.first.text # => "Something ..."
+The return value is a list of `Opener::KafParser::AST` nodes which behave like
+S expressions (and are formatted that way when calling `#inspect` on them).
+Currently there are 3 node types:
 
-There are also a few high level classes that let you reconstruct parts of the
-original text, retrieve opinions and retrieving lists of words and their
-polarity. For example, to get a list of the opinions you'd do the following:
+* document
+* text
+* opinion
 
-    # ...
+The latter groups a set of text nodes together that make up the opinion.
 
-    document    = parser.parse(input)
-    constructor = Opener::KafParser::OpinionList.new(document)
-    opinions    = constructor.construct
+To iterate over these nodes you'd do something along the lines of the
+following:
 
-    opinions[0].polarity                # => "positive"
-    opinions[0].expression.map(&:value) # => ["You", "did", "great"]
+    ast.language # => "en"
+
+    ast.children.each do |node|
+      if node.type == :text
+        puts "Word: #{node.inspect}"
+      else
+        puts "Opinion: #{node.inspect}"
+      end
+    end
 
 ## Requirements
 

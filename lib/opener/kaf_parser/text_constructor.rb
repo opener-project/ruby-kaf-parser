@@ -1,18 +1,18 @@
 module Opener
   module KafParser
     ##
-    # The TextConstructor class takes a list of {Opener::KafParser::Node::Text}
+    # The TextConstructor class takes a list of {Opener::KafParser::AST::Text}
     # instances and builds a String out of it containing the correct whitespace
     # between the different words.
     #
     # @!attribute [r] nodes
-    #  @return [Array<Opener::KafParser::Node::Text>]
+    #  @return [Array<Opener::KafParser::AST::Text>]
     #
     class TextConstructor
       attr_reader :nodes
 
       ##
-      # @param [Array<Opener::KafParser::Node::Text>] nodes
+      # @param [Array<Opener::KafParser::AST::Text>] nodes
       #
       def initialize(nodes)
         @nodes = nodes
@@ -41,7 +41,7 @@ module Opener
       end
 
       ##
-      # @param [Opener::KafParser::Node::Text] node
+      # @param [Opener::KafParser::AST::Text] node
       # @return [Numeric]
       #
       def calculate_offset(node)

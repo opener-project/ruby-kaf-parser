@@ -7,10 +7,10 @@ module Opener
     class Parser
       ##
       # Parses the input KAF/XML and returns an instance of
-      # {Opener::KafParser::Element::Document}.
+      # {Opener::KafParser::AST::Document}.
       #
       # @param [String] input The XML/KAF to parse.
-      # @return [Opener::KafParser::Element::Document]
+      # @return [Opener::KafParser::AST::Document]
       #
       def parse(input)
         sax_parser      = SaxParser.new
