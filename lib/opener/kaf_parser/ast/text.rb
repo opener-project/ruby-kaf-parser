@@ -35,9 +35,12 @@ module Opener
       # @!attribute [rw] polarity
       #  @return [String]
       #
+      # @!attribute [rw] property
+      #  @return [String]
+      #
       class Text < Base
         attr_accessor :id, :sentence, :paragraph, :offset, :length, :word_type,
-          :pos, :morphofeat, :sentiment_modifier, :polarity
+          :pos, :morphofeat, :sentiment_modifier, :polarity, :property
 
         ##
         # Called after a new instance of this class is created.
@@ -62,7 +65,8 @@ module Opener
             :pos                => pos,
             :morphofeat         => morphofeat,
             :sentiment_modifier => sentiment_modifier,
-            :polarity           => polarity
+            :polarity           => polarity,
+            :property           => property
           }
         end
       end # Generic

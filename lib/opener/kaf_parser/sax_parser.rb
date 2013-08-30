@@ -254,6 +254,31 @@ module Opener
         reset_target_buffer
       end
 
+      ##
+      # Processes a `<property>` node.
+      #
+      # @param [Hash] attr
+      #
+      def on_property(attr)
+        @attributes << attr
+
+        @buffer_targets = true
+      end
+
+      ##
+      # @see #on_property
+      #
+      def after_property
+        attrs = @attributes.pop
+
+        @targets.each do |target|
+          @term_mapping[target].property = attrs['lemma']
+        end
+
+        reset_attributes_buffer
+        reset_target_buffer
+      end
+
       private
 
       ##
