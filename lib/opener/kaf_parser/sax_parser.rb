@@ -1,8 +1,14 @@
 module Opener
   module KafParser
     ##
-    # The SaxParser class is a Nokogiri and stack based parser for parsing KAF
-    # documents.
+    # The SaxParser class is a Nokogiri SAX parser that builds a list of
+    # {Opener::KafParser::AST::Base} nodes containing word information such as
+    # the polarity and Part Of Speech as well as grouping words together based
+    # on the opinion expression they belong to.
+    #
+    # This SAX parser is a stack based parser and parses only relevant
+    # information of KAF documents. For example, the `<head>` of a KAF document
+    # is completely ignored.
     #
     # @!attribute [r] document
     #  @return [Opener::KafParser::Element::Document]
@@ -24,7 +30,7 @@ module Opener
         @buffer_characters = false
         @buffer_targets    = false
         @word_mapping      = {}
-        @term_mapping    = {}
+        @term_mapping      = {}
       end
 
       ##

@@ -6,6 +6,23 @@ module Opener
       # each word is wrapped in a tag and has various meta information (e.g.
       # the polarity) assigned to it.
       #
+      # Basic usage:
+      #
+      #     parser    = Opener::KafParser::Parser.new
+      #     ast       = parser.parse('...')
+      #     presenter = Opener::KafParser::Presenter::HTML.new
+      #
+      #     puts presenter.present(ast)
+      #
+      # ## Output
+      #
+      # The output is a set of span tags for each set of characters, span tags
+      # for whitespace and a set of span tags that group opinion expressions.
+      # Each span tag has a class indicating the type ("text", "opinion", etc)
+      # and a set of `data-*` attributes containing data such as the polarity.
+      # For example, the ID of a text node would be stored in `data-id`, the
+      # polarity in `data-polarity` and so forth.
+      #
       class HTML < Text
         ##
         # @return [String]
@@ -18,7 +35,10 @@ module Opener
         TYPES_WHITELIST = [String, Numeric]
 
         ##
+        # Presents the AST as a collection of HTML tags.
+        #
         # @param [Opener::KafParser::AST::Base] ast
+        # @return [String]
         #
         def present(ast)
           offset  = 0

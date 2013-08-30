@@ -7,6 +7,8 @@ module Opener
       #
       class Text
         ##
+        # Presents the AST as a plain Ruby String with no special formatting.
+        #
         # @param [Opener::KafParser::AST::Base] ast
         # @return [String]
         #
