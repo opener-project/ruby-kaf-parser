@@ -10,9 +10,13 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 1.9.3'
 
-  gem.files       = `git ls-files`.split("\n").sort
-  gem.executables = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files  = gem.files.grep(%r{^(test|spec|features)/})
+  gem.files = Dir.glob([
+    'doc/**/*',
+    'lib/**/*',
+    'LICENSE',
+    '*.gemspec',
+    'README.md'
+  ]).select { |file| File.file?(file) }
 
   gem.add_dependency 'nokogiri'
   gem.add_dependency 'builder'
