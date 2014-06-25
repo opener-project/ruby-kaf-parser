@@ -17,7 +17,8 @@ Gem::Specification.new do |gem|
     'lib/**/*',
     'LICENSE',
     '*.gemspec',
-    'README.md'
+    'README.md',
+    'LICENSE.txt'
   ]).select { |file| File.file?(file) }
 
   gem.add_dependency 'nokogiri'
