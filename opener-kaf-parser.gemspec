@@ -8,6 +8,8 @@ Gem::Specification.new do |gem|
   gem.description = gem.summary
   gem.has_rdoc    = 'yard'
 
+  gem.license = 'Apache 2.0'
+
   gem.required_ruby_version = '>= 1.9.3'
 
   gem.files = Dir.glob([
