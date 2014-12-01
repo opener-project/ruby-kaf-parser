@@ -1,5 +1,3 @@
-[![Build Status](https://drone.io/github.com/opener-project/ruby-kaf-parser/status.png)](https://drone.io/github.com/opener-project/ruby-kaf-parser/latest)
-
 # Ruby KAF Parser
 
 This repository contains the source code of the opener-kaf-parser, a simple and
